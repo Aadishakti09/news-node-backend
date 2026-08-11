@@ -20,7 +20,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: ["http://localhost:3000", 
+      "http://localhost:3001",
+      "https://news-admin-react-git-main-aadi-shakti.vercel.app",
+      "https://news-frontend-react-rh1u.vercel.app/"
+    ],
     credentials: true,
   })
 );
