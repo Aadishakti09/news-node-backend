@@ -48,16 +48,16 @@ authRouter.post("/login", async (req, res) => {
     if (userData.role === 'admin') {
       res.cookie("adminToken", token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "lax",
+        secure: true,
+        sameSite: "none",
         path: "/",
         maxAge: 60 * 60 * 1000
       });
     } else {
       res.cookie("userToken", token, {
         httpOnly: true,
-        secure: false,
-        sameSite: "lax",
+        secure: true,
+        sameSite: "none",
         path: "/",
         maxAge: 60 * 60 * 1000
       });
