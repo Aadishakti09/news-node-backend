@@ -23,7 +23,8 @@ app.use(
     origin: ["http://localhost:3000", 
       "http://localhost:3001",
       "https://news-admin-react-git-main-aadi-shakti.vercel.app",
-      "https://news-frontend-react-rh1u.vercel.app/"
+      "https://news-frontend-react-rh1u.vercel.app/",
+      "https://news-admin-react.vercel.app/",
     ],
     credentials: true,
   })
